@@ -1,0 +1,50 @@
+@use '../abstracts/' as a;
+
+.bn{
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 6px;
+}
+
+.es{
+    font-family: 'Expletus Sans', cursive;
+    letter-spacing: 2px;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+// Font Sizes
+$fs-xl: (
+    null: 3.5rem,
+    768px: 5.5rem,
+    1024px: 7rem
+);
+$fs-l:(
+    null: 1.5rem,
+    768px: 1.8rem,
+    1024px: 2rem
+);
+$fs-m:(
+    null: 1.2rem,
+    1024px: 1.5rem
+);
+$fs-s:(
+    null: 1.2rem
+);
+
+.fs-xl{
+    @include a.fs($fs-xl);
+}
+
+.fs-l{
+    @include a.fs($fs-l);
+}
+
+.fs-m{
+    @include a.fs($fs-m);
+}
+
+.fs-s{
+    @include a.fs($fs-s);
+}

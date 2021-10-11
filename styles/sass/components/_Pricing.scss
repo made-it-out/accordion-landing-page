@@ -1,0 +1,71 @@
+.pricing{
+    padding-top: 4rem;
+    padding-bottom: 10rem;
+
+    .col-md-4:nth-of-type(1) .pricing__tier{
+        // background-image: linear-gradient((90deg, #ffffff, 90%, #4428e6));
+    }
+    .col-md-4:nth-of-type(2) .pricing__tier{
+        background-image: linear-gradient((90deg,#4428e6, 70%, #510eaa));
+        color: #ffffff;
+
+        .pricing__btn{
+            color: #4428e6;
+            background-color: #ffffff;
+            border-color: #ffffff;
+
+            &:hover{
+                background-color: transparent;
+                color: #ffffff;
+            }
+        }
+    }
+    .col-md-4:nth-of-type(3) .pricing__tier{
+        background-color: #510eaa;
+        color: #ffffff;
+
+        .pricing__btn{
+            color: #510eaa;
+            background-color: #ffffff;
+            border-color: #ffffff;
+
+            &:hover{
+                background-color: transparent;
+                color: #ffffff;
+            }
+        }
+    }
+
+    &__tier{
+        padding: 1rem;
+        gap: 1rem;
+        border-radius: 5px;
+        height: 100%;
+        box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.4);
+        
+    }
+    &__plan{
+        font-weight: normal;
+    }
+    &__price{
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    &__features{
+        list-style-position: inside;
+    }
+    &__btn{
+        width: fit-content;
+        padding: 1em 1.7em;
+        text-decoration: none;
+        border-radius: 5px;
+        color: #000000;
+        border: 1px solid #000000;
+        transition: all 250ms ease-in-out;
+
+        &:hover{
+            color: #ffffff;
+            background-color: #000000;
+        }
+    }
+}

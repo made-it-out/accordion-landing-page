@@ -1,0 +1,32 @@
+.testimonials{
+    padding: 4rem 0;
+    text-align: center;
+
+    &__container{
+        max-width: 800px;
+        margin: auto;
+        gap: 1rem;
+    }
+    &__quote{
+        font-size: 1.2rem;
+    }
+    &__author{
+        color: #777777;
+        font-weight: bold;
+    }
+    &__cta{
+        width: fit-content;
+        text-decoration: none;
+        color: #240c64;
+        background-color: #ffffff;
+        padding: 1em 1.7em;
+        border-radius: 5px;
+        box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
+        transition: all 200ms ease-in-out;
+
+        &:hover{
+            color: #ffffff;
+            background-color: #240c64;
+        }
+    }
+}

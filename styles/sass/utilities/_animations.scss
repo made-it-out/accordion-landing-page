@@ -1,0 +1,101 @@
+@keyframes to-back-btn{
+    100%{
+        transform: translateX(2rem);
+    }
+}
+
+@keyframes to-front-btn{
+    100%{
+        transform: translateX(-2rem);
+    }
+}
+
+@keyframes fade-from-left{
+    0%{
+        opacity: 0;
+        transform: translateX(-4rem);
+    }
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}
+.fade-from-left{
+    animation-name: fade-from-left;
+    animation-duration: 2000ms;
+    animation-timing-function: cubic-bezier(0,.5,0,1);
+    animation-fill-mode: forwards;
+    animation-delay: 100ms;
+    opacity: 0;
+}
+
+@keyframes fade-from-right{
+    0%{
+        opacity: 0;
+        transform: translateX(4rem);
+    }
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}
+.fade-from-right{
+    animation-name: fade-from-right;
+    animation-duration: 2000ms;
+    animation-timing-function: cubic-bezier(0,.5,0,1);
+    animation-fill-mode: forwards;
+    animation-delay: 100ms;
+    opacity: 0;
+}
+
+@keyframes fade-slide-up{
+    0%{
+        opacity: 0;
+        transform: translateY(4rem);
+    }
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}
+.fade-slide-up{
+    animation-name: fade-slide-up;
+    animation-duration: 1000ms;
+    animation-timing-function: cubic-bezier(.13,.36,.76,.98);
+    animation-fill-mode: forwards;
+    animation-delay: 300ms;
+    opacity: 0;
+}
+
+@keyframes pop-in{
+    0%{
+        opacity: 0;
+        transform: translateY(-4rem) scale(.8);
+    }
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}
+.pop-in{
+    animation-name: pop-in;
+    animation-duration: 600ms;
+    animation-timing-function: cubic-bezier(0,.9,.3,1.2);
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes gradient {
+    0%{
+        background-position: left;
+    }
+    100%{
+        background-position: right;
+    }
+}
+
+@keyframes rotate-up{
+    100%{
+        transform: rotateZ(-4deg);
+    }
+}
