@@ -4,9 +4,10 @@ const Pricing = () => {
     return (
         <div className="pricing">
             <div className="container">
+                <h2 className="heading--center">Pricing options</h2>
                 <div className="row">
                     {pricing.map((tier, index) => (
-                        <div className="col-md-4" key={index}>
+                        <div className="col-md-4 mb-5" key={index}>
                             <div className="pricing__tier flex-column">
                                 <h3 className="pricing__plan">{tier.plan}</h3>
                                 <p className="pricing__price">{tier.price}</p>

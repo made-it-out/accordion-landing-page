@@ -1,10 +1,6 @@
 .pricing{
-    padding-top: 4rem;
-    padding-bottom: 10rem;
+    padding: 2rem 0;
 
-    .col-md-4:nth-of-type(1) .pricing__tier{
-        // background-image: linear-gradient((90deg, #ffffff, 90%, #4428e6));
-    }
     .col-md-4:nth-of-type(2) .pricing__tier{
         background-image: linear-gradient((90deg,#4428e6, 70%, #510eaa));
         color: #ffffff;
@@ -50,9 +46,10 @@
     &__price{
         font-weight: bold;
         font-size: 2rem;
+        font-family: "Libre Franklin", sans-serif;
     }
     &__features{
-        list-style-position: inside;
+        list-style: none;
     }
     &__btn{
         width: fit-content;

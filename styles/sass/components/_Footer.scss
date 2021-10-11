@@ -1,0 +1,16 @@
+.footer{
+    background-image: linear-gradient(#370c70, 20%, #240da8);
+    padding: 1rem 0;
+
+    &__links{
+        justify-content: flex-end;
+        gap: 1rem;
+    }
+    &__link{
+        text-decoration: none;
+        color: #ffffff;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}

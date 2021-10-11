@@ -1,3 +1,5 @@
+@use '../abstracts/' as a;
+
 .hero{
     display: flex;
     flex-direction: column;
@@ -5,25 +7,32 @@
     align-items: center;
     text-align: center;
     padding: 2rem;
-    // background-color: #240da8;
-    // background-image: linear-gradient(#240da8, #370c70a4);
     background-image: url('/blue-purple-bg.svg');
-    // background-repeat: repeat-x;
     background-repeat: no-repeat;
     background-position: bottom left;
     background-size: cover;
-    // height: 100vh;
     color: #ffffff;
-    background-color: #fafafa;
 
     &__icons{
         width: 100%;
-        max-width: 350px;
+        max-width: 450px;
         justify-content: space-between;
         align-items: center;
+        animation-delay: 600ms;
     }
-    &__title{}
-    &__subtitle{}
+    &__title{
+        font-size: 2rem;
+        letter-spacing: 1px;
+        animation-delay: 400ms;
+
+        @include a.mq(768px){
+            font-size: 3rem;
+        }
+    }
+    &__subtitle{
+        font-size: 1.5rem;
+        animation-delay: 800ms;
+    }
     &__cta{
         text-decoration: none;
         color: #240c64;

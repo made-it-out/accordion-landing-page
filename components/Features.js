@@ -1,6 +1,6 @@
-const Features = ({data}) => {
+const Features = ({data, animation}) => {
     return (
-        <div className="features">
+        <div className={`features ${animation ? animation : ''}`}>
             <div className="container">
                 <div className="row">
                     {data.map((feature, index) => (

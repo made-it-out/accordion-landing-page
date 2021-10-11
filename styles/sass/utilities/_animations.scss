@@ -1,15 +1,3 @@
-@keyframes to-back-btn{
-    100%{
-        transform: translateX(2rem);
-    }
-}
-
-@keyframes to-front-btn{
-    100%{
-        transform: translateX(-2rem);
-    }
-}
-
 @keyframes fade-from-left{
     0%{
         opacity: 0;
@@ -83,19 +71,4 @@
     animation-timing-function: cubic-bezier(0,.9,.3,1.2);
     animation-fill-mode: forwards;
     opacity: 0;
-}
-
-@keyframes gradient {
-    0%{
-        background-position: left;
-    }
-    100%{
-        background-position: right;
-    }
-}
-
-@keyframes rotate-up{
-    100%{
-        transform: rotateZ(-4deg);
-    }
 }

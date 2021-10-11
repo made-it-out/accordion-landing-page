@@ -1,17 +1,22 @@
 @use '../abstracts/' as a;
 
-.bn{
-    font-family: 'Bebas Neue', sans-serif;
-    letter-spacing: 6px;
-}
-
-.es{
-    font-family: 'Expletus Sans', cursive;
-    letter-spacing: 2px;
-}
 
 body{
     font-family: "Poppins", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Libre Franklin", sans-serif;
+}
+
+.heading{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+
+    &--center{
+        @extend .heading;
+        text-align: center;
+    }
 }
 
 // Font Sizes
