@@ -252,6 +252,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -260,7 +261,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 2rem;
   background-image: url("/blue-purple-bg.svg");
   background-repeat: no-repeat;
-  background-position: bottom left;
+  background-position: center bottom;
   background-size: cover;
   color: #ffffff;
 }
@@ -289,18 +290,19 @@ h1, h2, h3, h4, h5, h6 {
           animation-delay: 800ms;
 }
 .hero__cta {
+  position: relative;
   text-decoration: none;
-  color: #240c64;
+  color: #000000;
   background-color: #ffffff;
   padding: 1em 1.7em;
   border-radius: 5px;
-  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+  font-weight: 600;
   transition: all 200ms ease-in-out;
 }
-.hero__cta:hover {
+.hero__cta:hover, .hero__cta:focus {
   color: #ffffff;
-  background-color: #240c64;
-  box-shadow: 0px 0px 6px 0px rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  box-shadow: 0px 0px 6px 3px rgba(255, 255, 255, 0.5);
 }
 
 .accordion {

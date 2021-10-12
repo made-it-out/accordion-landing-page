@@ -34,6 +34,8 @@ const Hero = () => {
 
             <p className="hero__subtitle pop-in">Increase your sales by organizing with an accordion.</p>
             <a href="#" className="hero__cta fade-slide-up">Try for free</a>
+            <br />
+            <br />
         </div>
     );
 }
